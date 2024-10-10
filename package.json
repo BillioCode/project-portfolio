@@ -1,0 +1,15 @@
+{
+  "name": "project-portfolio",
+  "version": "1.0.0",
+  "description": "a portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BillioCode/project-portfolio"
+  },
+  "author": "BillelRch",
+  "license": "ISC"
+}

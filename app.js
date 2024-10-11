@@ -11,6 +11,7 @@ const port = process.env.PORT || 8080;
 
 
 app.set("views", path.join(__dirname, "views"));
+
 app.engine(".hbs", exphbs({
     extname: ".hbs",
     defaultLayout: false
@@ -19,12 +20,12 @@ app.engine(".hbs", exphbs({
 app.set("view engine", ".hbs");
 
 
+app.get('/', (req, res, next) => {
+    res.render("home.hbs");
+})
 
 
 
-app.get('/', (req, res) => {
-    res.send('index Routes is working');
-});
 
 
 

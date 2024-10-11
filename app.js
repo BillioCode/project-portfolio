@@ -14,7 +14,7 @@ app.engine(".hbs", exphbs({
     defaultLayout: false
 }).engine); 
 
-app.set("view engine", ".hbs");
+app.set("view engine", ".hbs"); 
 
 // Route to render the home view
 app.get('/', (req, res, next) => {

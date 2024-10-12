@@ -3,6 +3,8 @@ const app = express();
 const exphbs = require("express-handlebars").create; 
 const path = require("path");
 
+app.use(express.static(path.join(__dirname, "/public")));
+
 const port = process.env.PORT || 8080;
 
 

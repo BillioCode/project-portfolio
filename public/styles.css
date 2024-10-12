@@ -1,0 +1,20 @@
+@font-face {
+    font-family: fontLight;
+    src: url(Fonts/HvDTrial_Brandon_Grotesque_light-BF64a625c93e709.otf);
+}
+
+@font-face{
+    font-family: fontBold;
+    src: url(Fonts/HvDTrial_Brandon_Grotesque_bold-BF64a625c9151d5.otf);
+}
+
+@font-face{
+    font-family: fontMedium;
+    src: url(Fonts/HvDTrial_Brandon_Grotesque_medium-BF64a625c84a521.otf);
+}
+
+
+
+body{
+    font-family: fontLight;
+}

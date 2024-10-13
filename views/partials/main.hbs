@@ -8,7 +8,30 @@
 <body>
       <div class="navbar">
         <a class="name" href="/">Billel Rch</a>
-        <i id="bars" class="fas fa-bars"></i>
+        <i id="bars" class="fas fa-bars" onclick="openMenu()"></i>
       </div>
+
+
+
+      <div id="menu_slide" class="menu_slide">
+        <a href="javascript:void(0)" class="menu_x" onclick="closeMenu()">&times;</a>
+        <a href="/works">Work</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
+
+      <script>
+          const menuSlide = document.getElementById("menu_slide");
+
+          function openMenu() {
+            menuSlide.classList.toggle("hidden");
+          }
+
+          function closeMenu(){
+            menuSlide.classList.toggle("hidden");
+          }
+
+
+      </script>
 </body>
 </html> 

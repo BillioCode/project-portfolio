@@ -11,27 +11,31 @@
         <i id="bars" class="fas fa-bars" onclick="openMenu()"></i>
       </div>
 
-
-
-      <div id="menu_slide" class="menu_slide">
+      <div id="menu_overlay"></div>
+      <div id="menu_slide" class="menu_slide ">
         <a href="javascript:void(0)" class="menu_x" onclick="closeMenu()">&times;</a>
         <a href="/works">Work</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
       </div>
 
+
+
+
+
+
       <script>
           const menuSlide = document.getElementById("menu_slide");
 
           function openMenu() {
-            menuSlide.classList.toggle("hidden");
+            menuSlide.style.width = "200px"
+            document.getElementById("menu_overlay").style.width = "100%"
           }
 
           function closeMenu(){
-            menuSlide.classList.toggle("hidden");
+              menuSlide.style.width = "0px"
+              document.getElementById("menu_overlay").style.width = "0px"
           }
-
-
       </script>
 </body>
 </html> 

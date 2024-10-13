@@ -14,7 +14,45 @@
 }
 
 
-
 body{
     font-family: fontLight;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    height: 40px;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    border-bottom: 1px solid lightslategray;
+    background-color: #fff;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+
+.name{
+    text-decoration: none;
+    font-family: fontBold;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 0.8px;
+}
+
+#bars{
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+#bars:hover{
+    cursor: pointer;
+    color: rgb(113, 169, 188);
 }

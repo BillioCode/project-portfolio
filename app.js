@@ -4,9 +4,7 @@ const exphbs = require("express-handlebars").create;
 const path = require("path");
 
 app.use(express.static(path.join(__dirname, "/public")));
-
 const port = process.env.PORT || 8080;
-
 
 app.set("views", path.join(__dirname, "views"));
 
@@ -22,6 +20,8 @@ app.set("view engine", ".hbs");
 app.get('/', (req, res, next) => {
     res.render("home"); 
 });
+
+
 
 
 app.listen(port, () => {
